@@ -28,6 +28,34 @@
     body {
         overflow-x: hidden;
     }
+
+    .bgImage {
+        background-image: url('https://media.istockphoto.com/id/1311934969/photo/contact-us.jpg?s=612x612&w=0&k=20&c=_vmYyAX0aFi-sHH8eYS-tLLNfs1ZWXnNB8M7_KWwhgg=');
+        height: 40vh;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    @media (min-width: 767px) {
+        .content {
+            position: absolute;
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    @media (max-width: 768px) {
+        .content {
+            position: absolute;
+            top: 25%;
+            left: 50%;
+            width: 95%;
+            transform: translate(-50%, -50%);
+        }
+    }
 </style>
 
 <script>
@@ -77,8 +105,8 @@
                     </div>
                 </div>
             </nav>
-            <nav class="bg-white px-2 sm:px-4 py-2.5 dark:bg-gray-900 w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600 lg:hidden flex"
-                style="margin-top: -76px;">
+            <nav
+                class="bg-white px-2 sm:px-4 py-2.5 dark:bg-gray-900 w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600 lg:hidden flex">
                 <div class="container flex flex-wrap items-center justify-between mx-auto">
                     <a href="https://school-tailwindcss.vercel.app/school.html" class="flex items-center">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTuMdkg5uExhqnoTkIS1Tznf93WP0P2crfIJkN32wcmDDNWr6Is9eePJqtjBPinWwfH_c&usqp=CAU"
@@ -137,14 +165,16 @@
         </div>
     </div>
     <div class="lg:pt-16"></div>
-
-
-
-    <div class="m-auto max-w-screen-md px-3">
-        <h1 class="text-center text-5xl mt-20 mb-5 lg:pt-0 pt-12"><b>CONTACT US</b></h1>
+    <div class="bgImage"></div>
+    <div class="content text-white">
+        <h1 class="text-center text-5xl mb-5 lg:mt-5"><b>CONTACT US</b></h1>
         <h1 class="text-center text-2xl m-auto max-w-screen-sm mb-10 px-3">Have a question, comment, or just want to
             share your thoughts? Drop us a line below!</h1>
-        <!-- <h1 class="text-center text-xl my-10"><b>CONTACT</b></h1> -->
+    </div>
+
+
+
+    <div class="m-auto max-w-screen-md px-3 mt-5">
         <div class="flex flex-wrap -mx-3 mb-6">
             <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <label class="font-bold" for="grid-name">
