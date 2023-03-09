@@ -38,6 +38,11 @@
         background-size: cover;
     }
 
+    .leftSide {
+        padding-top: 150px;
+        padding-bottom: 100px;
+    }
+
     @media (min-width: 767px) {
         .content {
             position: absolute;
@@ -58,6 +63,13 @@
             left: 50%;
             width: 95%;
             transform: translate(-50%, -50%);
+        }
+    }
+
+    @media (min-width: 992px) {
+        .leftSide {
+            padding-top: 19%;
+            padding-bottom: 19%;
         }
     }
 </style>
@@ -109,8 +121,7 @@
                     </div>
                 </div>
             </nav>
-            <nav
-                class="bg-white px-2 sm:px-4 py-2.5 w-full z-20 top-0 left-0 border-b border-gray-200 lg:hidden flex">
+            <nav class="bg-white px-2 sm:px-4 py-2.5 w-full z-20 top-0 left-0 border-b border-gray-200 lg:hidden flex">
                 <div class="container flex flex-wrap items-center justify-between mx-auto">
                     <a href="https://school-home.vercel.app/school.html" class="flex items-center">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTuMdkg5uExhqnoTkIS1Tznf93WP0P2crfIJkN32wcmDDNWr6Is9eePJqtjBPinWwfH_c&usqp=CAU"
@@ -178,7 +189,7 @@
 
 
 
-    <div class="m-auto max-w-screen-md px-3 mt-5">
+    <!-- <div class="m-auto max-w-screen-md px-3 mt-5">
         <div class="flex flex-wrap -mx-3 mb-6">
             <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <label class="font-bold" for="grid-name">
@@ -238,8 +249,64 @@
             <button type="button"
                 class="bg-black sm:hover:bg-green text-white sm:hover:text-black px-4 py-2 mt-5 mb-20">SUBMIT</button>
         </div>
-    </div>
+    </div> -->
 
+    <div>
+        <div class="flex flex-wrap">
+            <div class="w-full lg:w-1/2 px-12 bg-green leftSide">
+                <h1 class="text-white py-md-5 px-5" style="font-size: 3rem;"><b>We’d love to
+                        hear from you</b></h1>
+            </div>
+            <div class="w-full lg:w-1/2">
+                <div style="background: #F5F7FA">
+                    <div class="p-12">
+                        <h1 class="text-3xl"><b>Couldn't get ahold of us?</b></h1>
+                        <p class="text-lg mt-1">Request a callback and we'll get back to you.</p>
+                        <form class="lg:max-w-lg">
+                            <div class="w-full mt-3">
+                                <label class="font-bold" for="grid-name">
+                                    Name
+                                </label>
+                                <input class="block w-full border border-gray-500 py-2 px-2 mt-1 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                    id="grid-name" type="text"></input>
+                            </div>
+                            <div class="w-full mt-3">
+                                <label class="font-bold" for="grid-surname">
+                                    Surname
+                                </label>
+                                <input class="block w-full border border-gray-500 py-2 px-2 mt-1 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                    id="grid-surname" type="text"></input>
+                            </div>
+                            <div class="w-full mt-3">
+                                <label class="font-bold" for="grid-address">
+                                    Address
+                                </label>
+                                <input class="block w-full border border-gray-500 py-2 px-2 mt-1 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                    id="grid-address" type="text"></input>
+                            </div>
+                            <div class="w-full mt-3">
+                                <label class="font-bold" for="grid-email">
+                                    Email
+                                </label>
+                                <input class="block w-full border border-gray-500 py-2 px-2 mt-1 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                    id="grid-email" type="text"></input>
+                            </div>
+                            <div class="w-full mt-3">
+                                <label class="font-bold" for="grid-message">
+                                    MESSAGE
+                                </label>
+                                <textarea rows="10"
+                                    class="block w-full border border-gray-500 py-2 px-2 mt-1 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                    id="grid-message" type="text"></textarea>
+                            </div>
+                            <button type="button"
+                            class="bg-black sm:hover:bg-green text-white sm:hover:text-black px-4 py-2 mt-5 w-full"><b>SUBMIT</b></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <hr>
 
